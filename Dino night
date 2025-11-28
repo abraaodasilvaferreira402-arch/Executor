@@ -1,0 +1,26 @@
+export default function App() {
+  return (
+    <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center justify-center text-center">
+      <h1 className="text-3xl font-bold mb-4">Seu App Rápido e Fácil</h1>
+      <p className="text-lg mb-6 max-w-xl">
+        Aqui está um modelo de aplicativo simples que você pode usar e modificar do jeito que quiser.
+        Basta editar textos, cores e funções. Esse modelo já está pronto para rodar!
+      </p>
+
+      <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-md">
+        <h2 className="text-xl font-semibold mb-3">Bloco de Notas Simples</h2>
+        <textarea
+          id="note"
+          placeholder="Digite algo aqui..."
+          className="w-full h-40 p-3 border border-gray-300 rounded-xl focus:outline-none"
+        ></textarea>
+        <button
+          onClick={() => alert("Anotação salva!")}
+          className="mt-4 w-full py-3 rounded-xl bg-blue-500 text-white font-semibold shadow hover:bg-blue-600 transition"
+        >
+          Salvar
+        </button>
+      </div>
+    </div>
+  );
+}
